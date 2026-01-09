@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>시계피 기억상실자 능력 생성기</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="시계피 기억상실자 능력 생성기">
+    <meta property="og:description" content="클릭 한 번으로 기억상실자 능력을 생성하세요!">
+    <meta property="og:image" content="https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon-container">
+            <img src="https://wiki.bloodontheclocktower.com/images/2/26/Icon_amnesiac.png" alt="기억상실자 아이콘" id="main-icon">
+            <div id="easter-egg-msg" class="hidden">기억을 찾는 중...</div>
+        </div>
+
+        <div class="display-area">
+            <h2 id="ability-text">기억상실자가 능력을 찾고 있습니다...</h2>
+            
+            <p id="ability-meta" class="hidden"></p>
+
+            <button id="details-toggle-btn" class="hidden">▼ 상세 운영법 보기</button>
+
+            <div id="details-container" class="hidden">
+                <div class="detail-item">
+                    <span class="detail-label">💡 How to Run:</span>
+                    <p id="desc-how-to-run" class="detail-content"></p>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">🌙 밤 순서:</span>
+                    <p id="desc-night-order" class="detail-content"></p>
+                </div>
+                <div class="detail-item" id="note-wrapper">
+                    <span class="detail-label">📝 Note:</span>
+                    <p id="desc-note" class="detail-content"></p>
+                </div>
+
+                <div class="copy-btn-wrapper">
+                    <button id="copy-btn">📋 복사하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-area">
+            <div class="filter-wrapper">
+                <select id="category-select">
+                    <option value="all">모든 유형</option>
+                </select>
+                <select id="timing-select">
+                    <option value="all">모든 시점</option>
+                </select>
+            </div>
+
+            <button id="generate-btn">능력 생성</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://open.kakao.com/o/smyEIE4" target="_blank" class="link-btn emoji-btn" title="능력 추가하기">
+                능력<br>추가하기
+            </a>
+            <a href="https://wiki.bloodontheclocktower.com/Main_Page" target="_blank" class="link-btn">
+                BOTC<br>공식 Wiki
+            </a>
+            <a href="https://open.kakao.com/o/gOQQgNog" target="_blank" class="link-btn">
+                한국 유일<br>온라인 시계피<br>커뮤니티
+            </a>
+            <a href="https://castleq.github.io/BOTC-Savant-generator/" target="_blank" class="link-btn">
+                서번트<br>명제 생성기
+            </a>
+        </div>
+
+        <footer>
+            <p>마지막 업데이트: 2025.01.09</p>
+            <p>made by Castle_Q</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
